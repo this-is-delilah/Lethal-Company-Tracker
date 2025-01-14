@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Lethal Tracker</title>
+        <link
+        rel="stylesheet"
+        href="styles/lethal-tracker.css">
+    </head>
+    <body>
+        <p class="header">- Lethal Tracker -</p>
+        <p class="subheader">RUNS LEFT X - THE COMPANY IS CURRENTLY BUYING AT XX%</p>
+        <p class="subheader">CURRENT SHIP VALUE: XXXX</p> 
+        <p class="subheader-extra">QUOTA: XXXX</p>
+
+          <div class="box">
+            EXPERIMENTATION
+          </div>
+          <div class="box">
+            ASSURANCE
+          </div>
+          <div class="box">
+            VOW
+          </div>
+          <div class="box">
+            OFFENSE
+          </div>
+          <div class="box">
+            [INSERT MOON]
+          </div>
+          <div class="box">
+            CURRENT RUN
+          </div>
+
+          <p></p>
+
+          <div class="lower-box">
+            Notes: There’s nothing here worth seeing.
+            <br>
+            <br>
+            Max Indoor Power: 4
+            Max Outdoor Power: 8
+            Minimum Scrap: 8
+            Maximum Scrap: 13
+            Turrets: 0-7 | Avg. 2
+            Landmines: 0-12 | Avg. 2
+
+          </div>
+          <div class="lower-box">
+            Notes: Best of the lower tier moons by far!
+            <br>
+            <br>
+            Max Indoor Power: 6
+            Max Outdoor Power: 8
+            Minimum Scrap: 13
+            Maximum Scrap: 17
+            Turrets: 0-7 | Avg. 3
+            Landmines: 0-11 | Avg. 3
+
+          </div>
+          <div class="lower-box">
+            ******* GIANTS! THEY CAN **** OFF!
+            <br>
+            <br>
+            Max Indoor Power: 7
+            Max Outdoor Power: 6
+            Minimum Scrap: 10
+            Maximum Scrap: 13
+            Turrets: 0-7 | Avg. 1
+            Landmines: 0-20 | Avg. 1
+
+          </div>
+          <div class="lower-box">
+            Notes: Coil-heads plus Brackens. Be warned.
+            <br>
+            <br>
+            Max Indoor Power: 12
+            Max Outdoor Power: 8
+            Minimum Scrap: 14
+            Maximum Scrap: 18
+            Turrets: 0-9 | Avg. 2
+            Landmines: 0-16 | Avg. 5
+          </div>
+
+          <div class="lower-box">
+            Notes: [Moon Notes]
+            <br>
+            <br>
+            Max Indoor Power: [Moon Stats]
+            Max Outdoor Power: [Moon Stats]
+            Minimum Scrap: [Moon Stats]
+            Maximum Scrap: [Moon Stats]
+            Turrets: [Moon Stats]
+            Landmines: [Moon Stats]
+          </div>
+
+          <div class="lower-box-extra">
+            <p class="center-text">PREREQUISITES</p>
+
+          What is your Quota:
+          <br>
+          Current Ship Value:
+          <br>
+          How Many Days Left:
+          </div>
+
+          <p></p>
+
+          <div class="box">
+            MARCH
+          </div>
+          <div class="box">
+            REND
+          </div>
+          <div class="box">
+            DINE
+          </div>
+          <div class="box">
+            TITAN
+          </div>
+          <div class="box">
+            CHANGE LOG
+          </div>
+
+          <p></p>
+
+          <div class="lower-box">
+            Notes: There will ALWAYS be a Bracken
+            <br>
+            <br>
+            Max Indoor Power: 14
+            Max Outdoor Power: 12
+            Minimum Scrap: 13
+            Maximum Scrap: 17
+            Turrets: 0-15 | Avg. 6
+            Landmines: 0-15 | Avg. 4
+          </div>
+          <div class="lower-box">
+            Notes: Whatever you do, don't get lost.
+            <br>
+            <br>
+            Max Indoor Power: 10
+            Max Outdoor Power: 6
+            Minimum Scrap: 18
+            Maximum Scrap: 26
+            Turrets: 0-0 | Avg. 0
+            Landmines: 0-3 | Avg. 1
+          </div>
+          <div class="lower-box">
+            Notes: Probably not worth it. Just go to Rend.
+            <br>
+            <br>
+            Max Indoor Power: 15
+            Max Outdoor Power: 6
+            Minimum Scrap: 20
+            Maximum Scrap: 28
+            Turrets: 3-18 | Avg. 6
+            Landmines: 7-35 | Avg. 17
+          </div>
+          <div class="lower-box">
+            Notes: If you make it back alive, you'll be rich!
+            <br>
+            <br>
+            Max Indoor Power: 18
+            Max Outdoor Power: 7
+            Minimum Scrap: 23
+            Maximum Scrap: 38
+            Turrets: 0-35 | Avg. 12
+            Landmines: 0-23 | Avg. 9
+          </div>
+          <div class="lower-box-change">
+            Indoor Level: XX/XX
+            Outdoor Level: XX/XX
+            <br>
+            <br>
+            Monsters Seen this run:
+            <p class="js-monster-list"></p>
+          </div>
+          
+          <p></p>
+          
+          <div class="container">
+            INDOOR MONSTERS SEEN:
+            <button class="monster-button" onclick="
+              addSpider();
+            ">BUNKER SPIDER</button>
+            <button class="monster-button" onclick="
+              addBracken();
+            ">BRACKEN</button>
+            <button class="monster-button" onclick="
+              addCoil();
+            ">COIL HEAD</button>
+            <button class="monster-button" onclick="
+              addGhost();
+            ">GHOST GIRL</button>
+            <button class="monster-button" onclick="
+              addBug();
+            ">HOARDING BUG</button>
+            <button class="monster-button" onclick="
+              addGoo();
+            ">HYGRODERE</button>
+            <button class="monster-button" onclick="
+              addJester();
+            ">JESTER</button>
+            <button class="monster-button" onclick="
+              addMask();
+            ">MASKED</button>
+            <button class="monster-button" onclick="
+              addNut();
+            ">NUTCRACKER</button>
+            <button class="monster-button" onclick="
+              addSpore();
+            ">SPORE LIZARD</button>
+            <button class="monster-button" onclick="
+              addSnare();
+            ">SNARE FLEA</button>
+            <button class="monster-button" onclick="
+              addThumper()
+            ">THUMPER</button>
+          </div>
+          <div class="container-os">
+            OUTDOOR MONSTERS SEEN:
+            <button class="monster-button">BABOON HAWK</button>
+            <button class="monster-button">CIRCUIT BEE</button>
+            <button class="monster-button">EYELESS DOG</button>
+            <button class="monster-button">EARTH LEVIATHAN</button>
+            <button class="monster-button">FOREST KEEPER / GIANT</button>
+            <button class="monster-button">GHOST GIRL</button>
+            <button class="monster-button">MANTICOIL</button>
+            <button class="monster-button">MASKED</button>
+            <button class="monster-button">ROAMING LOCUSTS</button>
+          </div>
+          <div class="container-ik">
+            INDOOR MONSTERS KILLED:
+            <button class="monster-button">BUNKER SPIDER</button>
+            <button class="monster-button">BRACKEN</button>
+            <button class="monster-button">HOARDING BUG</button>
+            <button class="monster-button">MASKED</button>
+            <button class="monster-button">NUTCRACKER</button>
+            <button class="monster-button">SPORE LIZARD</button>
+            <button class="monster-button">SNARE FLEA</button>
+            <button class="monster-button">THUMPER</button>
+          </div>
+          <div class="container-ok">
+            OUTDOOR MONSTERS KILLED:
+            <button class="monster-button">BABOON HAWK</button>
+            <button class="monster-button">EYELESS DOG</button>
+            <button class="monster-button">MANTICOIL</button>
+            <button class="monster-button">MASKED</button>
+          </div>
+
+
+          <script src="scripts/lethal-tracker.js"></script>
+    </body>
+</html>

@@ -1,0 +1,277 @@
+body {
+    background-color: rgb(63, 63, 61);
+    font-family: 'IBM 3270';
+    width: fit-content; 
+    margin-left: auto; 
+    margin-right: auto;
+}
+
+.small-input {
+  width: 150px;
+  height: 25px;
+  font-weight: bold;
+  background-color: rgb(63,63,61);
+  color: rgb(0, 255, 0);
+  border: 2px solid rgb(0, 255, 0);
+}
+
+.clear-button {
+  text-align: center;
+  display: block;
+  margin: auto;
+  font-weight: bold;
+  width: 200px;
+  height: 30px;
+  background-color: rgb(63,63,61);
+  color: rgb(0, 255, 0);
+  border: 2px solid rgb(0, 255, 0);
+} 
+
+.the-company-button {
+  text-align: center;
+  display: block;
+  margin: auto;
+  width: 250px;
+  height: 35px;
+  background-color: rgb(63,63,61);
+  color: rgb(0, 255, 0);
+  border: 2px solid rgb(0, 255, 0);
+  padding:
+}
+
+.moon-button {
+  width: 150px;
+  height: 25px;
+  font-family: 'IBM 3270';
+  font-size: 17px;
+  text-align: center;
+  border: none;
+  color: rgb(0, 255, 0);
+  background-color: rgb(63, 63, 61);
+  align-items: center;
+}
+
+.text {
+    color: rgb(0, 255, 0);
+    font-size: 30px;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+  }
+
+.header {
+    color: rgb(0, 255, 0);
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.subheader {
+    color: rgb(0, 255, 0);
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.subheader-extra {
+    color: rgb(0, 255, 0);
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.monster-button {
+  color: rgb(0, 255, 0);
+  border-color: rgb(0, 255, 0);
+  background-color: rgb(63, 63, 61);
+  font-weight: bold;
+  font-size: 15px;
+  width: 200px;
+  height: 35px;
+  margin-bottom: 5px;
+}
+
+.container {
+  width: 220px;
+  height: 540px;
+  font-size: 16px;
+  border: 2px solid rgb(0, 255, 0);
+  color: rgb(0, 255, 0);
+  display: inline-block;
+  text-align: center;
+  vertical-align: top;
+  margin-top: -295px;
+  margin-right: 5px;
+}
+
+.container-os {
+  width: 220px;
+  height: 460px;
+  font-size: 16px;
+  border: 2px solid rgb(0, 255, 0);
+  color: rgb(0, 255, 0);
+  display: inline-block;
+  text-align: center;
+  vertical-align: top;
+  margin-top: -295px;
+  margin-right: 5px;
+}
+
+.container-ik {
+  width: 220px;
+  height: 340px;
+  font-size: 16px;
+  border: 2px solid rgb(0, 255, 0);
+  color: rgb(0, 255, 0);
+  display: inline-block;
+  text-align: center;
+  vertical-align: top;
+  margin-top: -295px;
+  margin-right: 5px;
+}
+
+.container-ok {
+  width: 220px;
+  height: 220px;
+  font-size: 16px;
+  border: 2px solid rgb(0, 255, 0);
+  color: rgb(0, 255, 0);
+  display: inline-block;
+  text-align: center;
+  vertical-align: top;
+  margin-top: -295px;
+  margin-right: 5px;
+}
+
+.box {
+  display: inline-block;
+  width: 200px;
+  height: 15px;
+  font-family: 'IBM 3270';
+  font-size: 17px;
+  font-weight: bold;
+  text-align: center;
+  border: 2px solid rgb(0, 255, 0);
+  color: rgb(0, 255, 0);
+  padding: 10px;
+  margin-right: 5px;
+  align-items: center;
+  justify-content: center;
+}
+
+.box2 {
+  width: 200px;
+  height: 15px;
+  font-size: 16px;
+  border: 2px solid rgb(0, 255, 0);
+  color: rgb(0, 255, 0);
+  display: inline-block;
+  text-align: center;
+  vertical-align: top;
+  padding: 10px;
+  margin-top: 0px;
+  margin-right: 5px;
+}
+
+.box3 {
+  display: inline-block;
+  width: 200px;
+  height: 15px;
+  font-family: 'IBM 3270';
+  font-size: 17px;
+  font-weight: bold;
+  text-align: center;
+  border: 2px solid rgb(0, 255, 0);
+  color: rgb(0, 255, 0);
+  padding: 10px;
+  margin-right: 5px;
+  margin-bottom: 30px;
+  align-items: center;
+}
+
+.lower-box {
+  color: rgb(0, 255, 0);
+  display: inline-block;
+  width: 200px;
+  height: 200px;
+  font-family: 'IBM 3270';
+  font-size: 12px;
+  border: 2px solid rgb(0, 255, 0);
+  padding: 10px;
+  margin-right: 5px;
+  margin-bottom: 6px;;
+  line-height: 23px;
+}
+
+.lower-box2 {
+  color: rgb(0, 255, 0);
+  display: inline-block;
+  width: 200px;
+  height: 200px;
+  font-family: 'IBM 3270';
+  font-size: 12px;
+  border: 2px solid rgb(0, 255, 0);
+  padding: 10px;
+  margin-right: 5px;
+  margin-bottom: 6px;;
+  line-height: 23px;
+  margin-top: -30px;
+  vertical-align: top;
+}
+
+
+.lower-box-change {
+  color: rgb(0, 255, 0);
+  display: inline-block;
+  width: 200px;
+  height: 500px;
+  font-family: 'IBM 3270';
+  font-size: 15px;
+  border: 2px solid rgb(0, 255, 0);
+  padding: 10px;
+  margin-right: 5px;
+  margin-bottom: 6px;;
+  line-height: 25px;
+  margin-top: -30px;
+  vertical-align: top;
+}
+
+.lower-box-extra {
+  color: rgb(0, 255, 0);
+  display: inline-block;
+  width: 200px;
+  height: 200px;
+  font-family: 'IBM 3270';
+  font-size: 12px;
+  border: 2px solid rgb(0, 255, 0);
+  padding: 10px;
+  margin-right: 5px;
+  margin-bottom: 6px;;
+  line-height: 25px;
+  vertical-align: top;
+}
+
+.center-text {
+  color: rgb(0, 255, 0);
+  font-family: 'IBM 3270';
+  font-size: 12px;
+  text-align: center;
+}
+
+.moon-box {
+  color: rgb(0, 255, 0);
+  display: inline-block;
+  width: 200px;
+  height: 200px;
+  font-family: 'IBM 3270';
+  font-size: 12px;
+  border: 2px solid rgb(0, 255, 0);
+  padding: 10px;
+  margin-right: 5px;
+  margin-bottom: 6px;;
+  line-height: 25px;
+}

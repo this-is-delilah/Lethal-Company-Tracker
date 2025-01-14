@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Lethal Tracker</title>
+        <link
+        rel="stylesheet"
+        href="styles/lethal-tracker.css">
+    </head>
+    <body>
+
+      <!-- THIS IS THE TITLE HEADEER -->
+
+        <p class="header">- Lethal Tracker -</p>
+        <button class="the-company-button" onclick="removeDay();">SOLD AT THE COMPANY BUILDING</button>
+        <p class="subheader js-runs-left">RUNS LEFT X - THE COMPANY IS CURRENTLY BUYING AT XX%</p>
+        <p class="subheader-extra js-the-quota">QUOTA: XXXX</p>
+
+      <!-- THIS IS THE FIRST LINE OF TITLES -->
+          <div class="box">
+            <button class="moon-button js-moon-button" onclick="
+                selectMoon('Experimentation');
+              ">EXPERIMENTATION</button>
+          </div>
+          <div class="box">
+            <button class="moon-button js-moon-button" onclick="
+            selectMoon('Assurance');
+          ">ASSURANCE</button>
+          </div>
+          <div class="box">
+            <button class="moon-button js-moon-button" onclick="
+            selectMoon('Vow');
+          ">VOW</button>
+          </div>
+          <div class="box">
+            <button class="moon-button js-moon-button" onclick="
+            selectMoon('Offense');
+          ">OFFENSE</button>
+          </div>
+          <div class="box">
+            <button class="moon-button js-moon-button" onclick="
+            selectMoon('Adamance');
+          ">ADAMANCE</button>
+          </div>
+          <div class="box">
+            CURRENT RUN
+          </div>
+
+          <p></p>
+
+      <!-- THIS IS THE FIRST LINE OF INFO BOXES -->
+
+          <div class="lower-box">
+            Notes: There’s nothing here worth seeing.
+            <br>
+            <br>
+            Max Indoor Power: 4 <br>
+            Max Outdoor Power: 8 <br>
+            Minimum Scrap: 8 <br>
+            Maximum Scrap: 12 <br>
+            Turrets: 0-7 | Avg. 2 <br>
+            Landmines: 0-12 | Avg. 2 <br>
+
+          </div>
+          <div class="lower-box">
+            Notes: Best of the lower tier moons by far!
+            <br>
+            <br>
+            Max Indoor Power: 6 <br>
+            Max Outdoor Power: 8 <br>
+            Minimum Scrap: 13 <br>
+            Maximum Scrap: 17 <br>
+            Turrets: 0-7 | Avg. 3 <br>
+            Landmines: 0-11 | Avg. 3 <br>
+
+          </div>
+          <div class="lower-box">
+            ******* GIANTS! THEY CAN **** OFF!
+            <br>
+            <br>
+            Max Indoor Power: 7 <br>
+            Max Outdoor Power: 6 <br>
+            Minimum Scrap: 10 <br>
+            Maximum Scrap: 13 <br>
+            Turrets: 0-7 | Avg. 1 <br>
+            Landmines: 0-20 | Avg. 1 <br>
+
+          </div>
+          <div class="lower-box">
+            Notes: Coil-heads plus Brackens. Be warned.
+            <br>
+            <br>
+            Max Indoor Power: 12 <br>
+            Max Outdoor Power: 8 <br>
+            Minimum Scrap: 14 <br>
+            Maximum Scrap: 18 <br>
+            Turrets: 0-9 | Avg. 2 <br>
+            Landmines: 0-16 | Avg. 5 <br>
+          </div>
+
+          <div class="lower-box">
+            Notes: Learning more about this moon, please hold.
+            <br>
+            <br>
+            Max Indoor Power: 13 <br>
+            Max Outdoor Power: 13 <br>
+            Minimum Scrap: 19 <br>
+            Maximum Scrap: 23 <br>
+            Turrets: 0-12 | Avg. 3 <br>
+            Landmines: 0-35 | Avg. 7 <br>
+          </div>
+
+          <div class="lower-box-extra">
+            <p class="center-text">PREREQUISITES</p>
+
+          What is your Quota: <input placeholder="Quota?" class="small-input js-quota" onkeydown="quotaUpdater(event);"> 
+          <br>
+          Current Ship Value: <input placeholder="Ship Value?" class="small-input js-ship-value" onkeydown="shipValueCalculator(event);">
+          <br>
+          How Many Days Left: <input placeholder="Days Left?" class="small-input js-days-left" onkeydown="daysLeftExpress(event);">
+          </div>
+
+          <p></p>
+
+      <!-- THIS IS THE SECOND LINE OF TITLES -->
+
+          <div class="box3">
+            <button class="moon-button js-moon-button" onclick="
+            selectMoon('March');
+          ">MARCH</button>
+          </div>
+          <div class="box3">
+            <button class="moon-button js-moon-button" onclick="
+            selectMoon('Rend');
+          ">REND</button>
+          </div>
+          <div class="box3">
+            <button class="moon-button js-moon-button" onclick="
+            selectMoon('Dine');
+          ">DINE</button>
+          </div>
+          <div class="box3">
+            <button class="moon-button js-moon-button" onclick="
+            selectMoon('Titan');
+          ">TITAN</button>
+          </div>
+          <div class="box2">
+            MONSTER LOGBOOK
+          </div>
+
+          <p></p>
+
+      <!-- THIS IS THE SECOND LINE OF INFO BOXES -->
+
+          <div class="lower-box2">
+            Notes: There will ALWAYS be a Bracken
+            <br>
+            <br>
+            Max Indoor Power: 14 <br>
+            Max Outdoor Power: 12 <br>
+            Minimum Scrap: 13 <br>
+            Maximum Scrap: 17 <br>
+            Turrets: 0-15 | Avg. 6 <br>
+            Landmines: 0-15 | Avg. <br>
+          </div>
+          <div class="lower-box2">
+            Notes: Whatever you do, don't get lost.
+            <br>
+            <br>
+            Max Indoor Power: 10 <br>
+            Max Outdoor Power: 6 <br>
+            Minimum Scrap: 18 <br>
+            Maximum Scrap: 26 <br>
+            Turrets: 0-0 | Avg. 0 <br>
+            Landmines: 0-3 | Avg. 1 <br>
+          </div>
+          <div class="lower-box2">
+            Notes: Probably not worth it. Just go to Rend.
+            <br>
+            <br>
+            Max Indoor Power: 15 <br>
+            Max Outdoor Power: 6 <br>
+            Minimum Scrap: 20 <br>
+            Maximum Scrap: 28 <br>
+            Turrets: 3-18 | Avg. 6 <br>
+            Landmines: 7-35 | Avg. 17 <br> 
+          </div>
+          <div class="lower-box2">
+            Notes: If you make it back alive, you'll be rich!
+            <br>
+            <br>
+            Max Indoor Power: 18 <br>
+            Max Outdoor Power: 7 <br>
+            Minimum Scrap: 23 <br>
+            Maximum Scrap: 38 <br>
+            Turrets: 0-35 | Avg. 12 <br>
+            Landmines: 0-23 | Avg. 9 <br>
+          </div>
+          <div class="lower-box-change">
+            <button class="clear-button" onclick="jsClearButton();">CLEAR</button>
+            <br>
+            <p class="js-indoor-power">Indoor Level: 0/XX</p>
+            <p class="js-outdoor-power">Outdoor Level: 0/XX</p>
+            <br>
+            <br>
+            Monsters Seen this run:
+            <p class="js-monster-list"></p>
+          </div>
+          
+          <p></p>
+
+        <!-- THIS IS ALL OF THE BUTTONS FOR INDOOR AND OUTDOOR MONSTERS
+        This includes the buttons for removing monsters from the lists -->
+          
+          <div class="container">
+            INDOOR MONSTERS SEEN:
+
+            <p id="monsterStyle"></p>
+          
+            <button class="monster-button" id="spider" onclick="addMobButtonClick(this.id)">
+              BUNKER SPIDER
+            </button>
+            <button class="monster-button" id="bracken" onclick="addMobButtonClick(this.id)">
+              BRACKEN
+            </button>
+            <button class="monster-button" id="butler" onclick="addMobButtonClick(this.id)">
+              BUTLER
+            </button>
+            <button class="monster-button" id="coilhead" onclick="addMobButtonClick(this.id)">
+              COILHEAD
+            </button>
+            <button class="monster-button" id="ghost" onclick="addMobButtonClick(this.id)">
+              GHOST GIRL
+            </button>
+            <button class="monster-button" id="bug" onclick="addMobButtonClick(this.id)">
+              HOARDING BUG
+            </button>
+            <button class="monster-button" id="goo" onclick="addMobButtonClick(this.id)">
+              GOO/SLIME
+            </button>
+            <button class="monster-button" id="jester" onclick="addMobButtonClick(this.id)">
+              JESTER
+            </button>
+            <button class="monster-button" id="masked" onclick="addMobButtonClick(this.id)">
+              MASKED
+            </button>
+            <button class="monster-button" id="nutcracker" onclick="addMobButtonClick(this.id)">
+              NUTCRACKER
+            </button>
+            <button class="monster-button" id="spore" onclick="addMobButtonClick(this.id)">
+              SPORE LIZARD
+            </button>
+            <button class="monster-button" id="snare" onclick="addMobButtonClick(this.id)">
+              SNARE FLEA
+            </button>
+            <button class="monster-button" id="thumper" onclick="addMobButtonClick(this.id)">
+              THUMPER
+            </button>
+          </div>
+
+          <div class="container-os">
+            OUTDOOR MONSTERS SEEN:
+
+            <button class="monster-button" id="hawk" onclick="addMobButtonClick2(this.id)">
+              BABOON HAWK
+            </button>
+            <button class="monster-button" id="bee" onclick="addMobButtonClick2(this.id)">
+              CIRCUIT BEE
+            </button>
+            <button class="monster-button" id="dog" onclick="addMobButtonClick2(this.id)">
+              EYELESS DOG
+            </button>
+            <button class="monster-button" id="worm" onclick="addMobButtonClick2(this.id)">
+              EARTH LEVIATHAN
+            </button>
+            <button class="monster-button" id="giant" onclick="addMobButtonClick2(this.id)">
+              FOREST KEEPER
+            </button>
+            <button class="monster-button" id="ghost2" onclick="addMobButtonClick2(this.id)">
+              GHOST GIRL
+            </button>
+            <button class="monster-button" id="manticoil" onclick="addMobButtonClick2(this.id)">
+              MANTICOIL
+            </button>
+            <button class="monster-button" id="masked2" onclick="addMobButtonClick2(this.id)">
+              MASKED
+            </button>
+            <button class="monster-button" id="robot" onclick="addMobButtonClick2(this.id)">
+              OLD BIRD/ROBOT
+            </button>
+            <button class="monster-button" id="locusts" onclick="addMobButtonClick2(this.id)">
+              ROAMING LOCUSTS
+            </button>
+            <button class="monster-button" id="tulip" onclick="addMobButtonClick2(this.id)">
+              TULIP SNAKE
+            </button>
+          </div>
+          <div class="container-ik">
+            INDOOR MONSTERS KILLED:
+
+            <button class="monster-button" id="spider" onclick="killMobButtonClick(this.id)">
+              BUNKER SPIDER
+            </button>
+            <button class="monster-button" id="butler" onclick="killMobButtonClick(this.id)">
+              BUTLER
+            </button>
+            <button class="monster-button" id="bug" onclick="killMobButtonClick(this.id)">
+              HOARDING BUG
+            </button>
+            <button class="monster-button" id="masked" onclick="killMobButtonClick(this.id)">
+              MASKED
+            </button>
+            <button class="monster-button" id="nutcracker" onclick="killMobButtonClick(this.id)">
+              NUTCRACKER
+            </button>
+            <button class="monster-button" id="spore" onclick="killMobButtonClick(this.id)">
+              SPORE LIZARD
+            </button>
+            <button class="monster-button" id="snare" onclick="killMobButtonClick(this.id)">
+              SNARE FLEA
+            </button>
+            <button class="monster-button" id="thumper" onclick="killMobButtonClick(this.id)">
+              THUMPER
+            </button>
+          </div>
+          <div class="container-ok">
+            OUTDOOR MONSTERS KILLED:
+
+            <button class="monster-button" id="hawk" onclick="killMobButtonClick2(this.id)">
+              BABOON HAWK
+            </button>
+            <button class="monster-button" id="dog" onclick="killMobButtonClick2(this.id)">
+              EYELESS DOG
+            </button>
+            <button class="monster-button" id="manticoil" onclick="killMobButtonClick2(this.id)">
+              MANTICOIL
+            </button>
+            <button class="monster-button" id="masked" onclick="killMobButtonClick2(this.id)">
+              MASKED
+            </button>
+            <button class="monster-button" id="tulip" onclick="killMobButtonClick2(this.id)">
+              TULIP SNAKE
+            </button>
+          </div>
+
+
+          <script src="scripts/lethal-tracker.js"></script>
+    </body>
+</html>
